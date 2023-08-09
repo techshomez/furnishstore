@@ -7,9 +7,19 @@ import {
   FiSearch,
   FiShoppingCart,
   FiUser,
+  FiX,
 } from "react-icons/fi";
+import { useState } from "react";
 
 const Header = () => {
+  const [openMenu, SetOpenMenu] = useState("middle");
+  const handleMenu = () => {
+    SetOpenMenu("middleMobile");
+  };
+
+  const handleClose = () => {
+    SetOpenMenu("middle");
+  };
   return (
     <>
       <main className="main">
@@ -23,7 +33,10 @@ const Header = () => {
                 <span>FurnishStore</span>
               </Link>
             </div>
-            <div className="middle">
+            <div className={openMenu}>
+              <span onClick={handleClose}>
+                <FiX />
+              </span>
               <Link to="" className="active">
                 Home
               </Link>
@@ -44,7 +57,7 @@ const Header = () => {
                 <FiSearch />
               </i>
             </div>
-            <div className="hambuger">
+            <div className="hambuger" onClick={handleMenu}>
               <i>
                 <FiMenu />
               </i>
