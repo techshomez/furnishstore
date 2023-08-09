@@ -50,6 +50,10 @@
       align-items: center;
       gap: 2rem;
 
+      span {
+        display: none;
+      }
+
       a {
         position: relative;
         color: gray;
