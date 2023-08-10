@@ -8,7 +8,7 @@ const BannerCount = () => {
           <span>950+</span>
           <small>
             Furniture and <br />
-            home equipment
+            home equip
           </small>
         </div>
         <div className="item__list">
