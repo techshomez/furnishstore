@@ -1,0 +1,27 @@
+.count {
+  width: 700px;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: var(--white);
+
+  .count__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 0.2rem 0rem 0rem 0.2rem;
+    height: inherit;
+    border-bottom-right-radius: 10px;
+    background-color: var(--green);
+
+    .item__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      width: 200px;
+    }
+  }
+}
