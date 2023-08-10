@@ -10,6 +10,7 @@ import {
   FiX,
 } from "react-icons/fi";
 import { useState } from "react";
+import Banner from "../../home/banner";
 
 const Header = () => {
   const [openMenu, SetOpenMenu] = useState("middle");
@@ -63,6 +64,7 @@ const Header = () => {
               </i>
             </div>
           </nav>
+          <Banner />
         </header>
       </main>
     </>
